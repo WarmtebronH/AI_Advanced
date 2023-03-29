@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2023-03-29T10:03:54.090097",
+    "startedAt": "2023-03-29T10:03:53.324002",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/WarmtebronH/AI_Advanced.git",
+        "commit": "d0895cbcc60baf805375aedd89495578f9045286"
+    },
+    "email": "Heather.Diemen@live.nl",
+    "root": "C:/Users/Warmtebron/Documents/School/AI_Advanced",
+    "host": "DESKTOP-1I3U93P",
+    "username": "Warmtebron",
+    "executable": "c:\\Users\\Warmtebron\\anaconda3\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2500.0,
+        "min": 0.0,
+        "max": 2500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 0.0,
+            "max": 2500.0
+        }
+    ],
+    "disk": {
+        "total": 930.7861289978027,
+        "used": 570.9512329101562
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Ti",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.845603942871094
+    }
+}

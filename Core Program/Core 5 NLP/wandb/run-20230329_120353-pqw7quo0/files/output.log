@@ -1,0 +1,42 @@
+The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 1000
+  Batch size = 8
+{'eval_loss': 0.40546923875808716, 'eval_accuracy': 0.829, 'eval_runtime': 17.5903, 'eval_samples_per_second': 56.85, 'eval_steps_per_second': 7.106, 'epoch': 1.0}
+The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 1000
+  Batch size = 8
+{'eval_loss': 0.4293243885040283, 'eval_accuracy': 0.865, 'eval_runtime': 17.2418, 'eval_samples_per_second': 57.998, 'eval_steps_per_second': 7.25, 'epoch': 2.0}
+The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 1000
+  Batch size = 8
+{'eval_loss': 0.60234135389328, 'eval_accuracy': 0.866, 'eval_runtime': 17.2844, 'eval_samples_per_second': 57.856, 'eval_steps_per_second': 7.232, 'epoch': 3.0}
+{'train_runtime': 233.6793, 'train_samples_per_second': 12.838, 'train_steps_per_second': 1.605, 'train_loss': 0.33795538330078123, 'epoch': 3.0}
+Training completed. Do not forget to share your model on huggingface.co/models =)
+The following columns in the training set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 375
+  Number of trainable parameters = 108311810
+The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 1000
+  Batch size = 8
+{'eval_loss': 0.60234135389328, 'eval_accuracy': 0.866, 'eval_runtime': 16.6898, 'eval_samples_per_second': 59.917, 'eval_steps_per_second': 7.49, 'epoch': 1.0}
+The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 1000
+  Batch size = 8
+{'eval_loss': 0.60234135389328, 'eval_accuracy': 0.866, 'eval_runtime': 16.5422, 'eval_samples_per_second': 60.452, 'eval_steps_per_second': 7.556, 'epoch': 2.0}
+The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: text. If text are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 1000
+  Batch size = 8
+{'eval_loss': 0.60234135389328, 'eval_accuracy': 0.866, 'eval_runtime': 16.2206, 'eval_samples_per_second': 61.65, 'eval_steps_per_second': 7.706, 'epoch': 3.0}
+{'train_runtime': 199.8701, 'train_samples_per_second': 15.01, 'train_steps_per_second': 1.876, 'train_loss': 0.08513127136230468, 'epoch': 3.0}
