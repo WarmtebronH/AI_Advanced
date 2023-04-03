@@ -13,6 +13,7 @@ df = pd.read_csv('DV opdracht/1Day2022.csv')
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 
+
 # App layout
 app.layout = html.Div([
     html.Div(className='row', children='Interactive Air Pollution Graph',
