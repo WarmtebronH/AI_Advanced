@@ -15,6 +15,21 @@ class Board:
         self._add_pieces('white')
         self._add_pieces('black')
 
+    def get_all_valid_moves(self, color):
+        moves = []
+
+        for row in range(ROWS):
+            for col in range(COLS):
+                square = self.squares[row][col]
+                if square.has_piece() and square.piece.color == color:
+                    piece_moves = self.calc_moves(square.piece, row, col, bool=True)
+                    print(f'Piece: {square.piece}, Moves: {piece_moves}')  # Debugging line
+                    for move in piece_moves:
+                        moves.append((square, move))
+
+        return moves
+
+
     def move(self, piece, move, testing=False):
         initial = move.initial
         final = move.final
@@ -95,7 +110,8 @@ class Board:
         
         return False
 
-    def calc_moves(self, piece, row, col, bool=True):
+    def calc_moves(self, piece, row, col, bool=False):
+        piece.moves.clear()
         '''
             Calculate all the possible (valid) moves of an specific piece on a specific position
         '''
@@ -195,6 +211,7 @@ class Board:
                             else:
                                 # append new move
                                 piece.add_move(move)
+       
 
 
         def knight_moves():
@@ -387,6 +404,7 @@ class Board:
                                     right_rook.add_move(moveR)
                                     # append new move king
                                     piece.add_move(moveK)
+               
 
         if isinstance(piece, Pawn): 
             pawn_moves()
@@ -424,6 +442,8 @@ class Board:
 
         elif isinstance(piece, King): 
             king_moves()
+
+        return piece.moves
 
     def _create(self):
         for row in range(ROWS):

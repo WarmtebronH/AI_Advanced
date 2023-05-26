@@ -103,6 +103,7 @@ class Game:
             # blit
             pygame.draw.rect(surface, color, rect, width=3)
 
+
     # other methods
 
     def next_turn(self):
